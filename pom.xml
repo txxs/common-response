@@ -7,7 +7,7 @@
 
 	<groupId>com.github.txxs</groupId>
 	<artifactId>common-response</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 
 	<name>common-response</name>
 	<description>handle message standard when send to front</description>
