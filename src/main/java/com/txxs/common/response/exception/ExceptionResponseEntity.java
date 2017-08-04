@@ -30,7 +30,7 @@ public class ExceptionResponseEntity extends ResponseEntity<ExceptionResponseEnt
                 return create((UniversalException)e);
             } else {
                 ExceptionResponseEntity.OutputJson oj = new ExceptionResponseEntity.OutputJson();
-                oj.code = "E000000000";
+                oj.code = "000";
                 oj.message = e.getMessage();
                 oj.detail = null;
                 return oj;

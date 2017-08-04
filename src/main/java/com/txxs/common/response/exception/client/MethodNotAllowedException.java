@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @Time:17:23
  */
 @ResponseStatus(HttpStatus.METHOD_NOT_ALLOWED)
-@UniversalException.Code("E000000405")
+@UniversalException.Code("405")
 public class MethodNotAllowedException extends ClientException {
     public MethodNotAllowedException() {
     }

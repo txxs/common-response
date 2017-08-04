@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @Time:16:56
  */
 @ResponseStatus(HttpStatus.BAD_REQUEST)
-@UniversalException.Code("E000000400")
+@UniversalException.Code("400")
 public class ClientException extends UniversalException {
     public ClientException() {
     }

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @Time:17:23
  */
 @ResponseStatus(HttpStatus.BAD_GATEWAY)
-@UniversalException.Code("E000000502")
+@UniversalException.Code("502")
 public class BadGatewayException extends ServerException {
     public BadGatewayException() {
     }

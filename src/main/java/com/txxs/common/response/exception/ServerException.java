@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
  * @Time:17:05
  */
 @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-@UniversalException.Code("E000000500")
+@UniversalException.Code("500")
 public class ServerException extends UniversalException {
     public ServerException() {
     }

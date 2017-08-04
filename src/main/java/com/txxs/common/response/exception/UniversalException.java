@@ -16,9 +16,9 @@ import java.util.Map;
  * @Time:16:57
  */
 @ResponseStatus(code = HttpStatus.INTERNAL_SERVER_ERROR, reason = "Internal Server Error")
-@UniversalException.Code("E000000000")
+@UniversalException.Code("000")
 public abstract class UniversalException extends RuntimeException {
-    public static final String DEFAULT_CODE = "E000000000";
+    public static final String DEFAULT_CODE = "000";
     private Map<String, Object> detail;
 
     protected UniversalException() {
@@ -63,7 +63,7 @@ public abstract class UniversalException extends RuntimeException {
     }
 
     String parseToCode(HttpStatus httpStatus) {
-        return "E000000" + httpStatus.value();
+        return  String.valueOf(httpStatus.value());
     }
 
     @Retention(RetentionPolicy.RUNTIME)
